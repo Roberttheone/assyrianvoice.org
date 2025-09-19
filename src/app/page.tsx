@@ -32,19 +32,18 @@ export default function Home(){
       </section>
     </div>
   );
-}
-{/* Featured Images */}
 <section className="card">
-  <h2 style={{fontWeight:800}}>Featured Images</h2>
+  <h2 style={{fontWeight:800}}>Gallery Highlights</h2>
   <div style={{display:'grid',gap:12,gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',marginTop:8}}>
+    {/* eslint-disable-next-line @next/next/no-img-element */}
+    <img src="https://images.metmuseum.org/CRDImages/an/original/DP270389.jpg" alt="Tablet — Library of Ashurbanipal" loading="lazy" style={{width:'100%',height:160,objectFit:'cover',borderRadius:12}}/>
     {/* eslint-disable-next-line @next/next/no-img-element */}
     <img src="https://images.metmuseum.org/CRDImages/an/original/DP120929.jpg" alt="Lamassu — The Met" loading="lazy" style={{width:'100%',height:160,objectFit:'cover',borderRadius:12}}/>
     {/* eslint-disable-next-line @next/next/no-img-element */}
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Jerwan_Aqueduct.jpg" alt="Jerwan Aqueduct" loading="lazy" style={{width:'100%',height:160,objectFit:'cover',borderRadius:12}}/>
-    {/* eslint-disable-next-line @next/next/no-img-element */}
-    <img src="https://images.metmuseum.org/CRDImages/an/original/DP375421.jpg" alt="Relief panel — The Met" loading="lazy" style={{width:'100%',height:160,objectFit:'cover',borderRadius:12}}/>
   </div>
   <div style={{marginTop:10}}>
-    <a className="btn" href="/gallery">See full gallery</a>
+    <a className="btn" href="/gallery">Explore more</a>
   </div>
 </section>
+
